@@ -5,7 +5,7 @@ from lightgbm import LGBMClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
 # === Load dataset ===
-df = pd.read_csv("simulated_AD_users_groq_with_metrics.csv")
+df = pd.read_csv("Lsimulated_AD_users_groq_metrics.csv")
 
 # === Features and labels ===
 features = [
@@ -32,10 +32,10 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 # === Report ===
-print("📊 LightGBM Classification Report:")
+print(" LightGBM Classification Report:")
 print(classification_report(y_test, y_pred, target_names=le.classes_))
 
 # === Confusion matrix (optional) ===
 cm = confusion_matrix(y_test, y_pred)
-print("\n🔢 Confusion Matrix:")
+print("\n Confusion Matrix:")
 print(cm)
