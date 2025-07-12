@@ -10,7 +10,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # === Groq API Configuration ===
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "Enter_your_Groq_API"
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 HEADERS = {
     "Authorization": f"Bearer {GROQ_API_KEY}",
